@@ -6,11 +6,11 @@ Ce projet a été réalisé dans le cadre de ma formation en informatique.
 
 Il s’agit d’une application web de gestion de musée comprenant :
 
-  Front Office : présentation des œuvres et des artistes
+     * Front Office : présentation des œuvres et des artistes
 
-  Back Office : gestion et administration des contenus
+    * Back Office : gestion et administration des contenus
 
-Le projet est développé en HTML, CSS et JavaScript et est actuellement en cours d’amélioration.
+Le projet est développé en HTML, CSS et PHP et est actuellement en cours d’amélioration.
 ---
 
 ##  Fonctionnalités
