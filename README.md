@@ -54,7 +54,7 @@ Le projet est développé en HTML, CSS et PHP et est actuellement en cours d’a
 
 * Gestion dynamique des données (base de données)
 * Amélioration du design (responsive)
-*ajout de cookies pour la gestion des préférences utilisateurs
+* ajout de cookies pour la gestion des préférences utilisateurs
 
 ---
 
