@@ -1,0 +1,385 @@
+/* =========================
+   Musée Histoire des Œuvres
+   ========================= */
+
+/* =========================
+   Structure globale
+   ========================= */
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, sans-serif;
+	background: #f6f8fb;
+	color: #1d2430;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+header{
+	background: linear-gradient(120deg, #0b1f3a, #123c73);
+	color: white;
+	padding: 18px 14px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+header h1{
+	margin: 0;
+	font-size: 24px;
+	letter-spacing: 0.5px;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+
+.navbar{
+	border-radius: 12px;
+	margin-top: 12px;
+	box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.navbar .navbar-brand{
+	color: #0b1f3a !important;
+	font-weight: bold;
+	padding: 10px 12px;
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+.navbar .navbar-brand:hover{
+	background: #e9f0ff;
+	transform: translateY(-1px);
+}
+
+/* =========================
+   Main
+   ========================= */
+
+main{
+	flex: 1;
+	padding: 18px 14px;
+}
+
+/* Fil d’ariane */
+main header{
+	background: white;
+	color: #0b1f3a;
+	padding: 10px 12px;
+	border-left: 5px solid #123c73;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+	font-weight: bold;
+}
+
+/* =========================
+   Titres globaux
+   ========================= */
+
+h2{
+	color: #0b1f3a;
+	margin-top: 10px;
+}
+
+/* =========================
+   BOUTONS 
+   ========================= */
+
+.btn{
+	border-radius: 12px ;
+	padding: 9px 14px ;
+	font-weight: bold ;
+}
+
+.btn-primary{
+	background: #123c73 ;
+	border: none ;
+	box-shadow: 0 10px 18px rgba(18,60,115,0.18);
+}
+
+.btn-primary:hover{
+	background: #0b2b55 ;
+}
+
+.btn-secondary{
+	background: #1f2a37 ;
+	border: none ;
+	box-shadow: 0 10px 18px rgba(31,42,55,0.18);
+}
+
+.btn-secondary:hover{
+	background: #0f1720 ;
+}
+
+/* Ajustement utile */
+.btn-outline-dark{
+	border-radius: 12px;
+	font-weight: bold;
+}
+.btn-outline-dark:hover{
+	transform: translateY(-1px);
+}
+
+/* =========================
+   CARDS (œuvres / artistes)
+   ========================= */
+
+.card{
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+	overflow: hidden;
+	background: white;
+}
+
+
+.card-img-top{
+	height: 220px;
+	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.card-body{
+	text-align: left;
+}
+
+.card-title{
+	font-size: 20px;
+}
+
+.card-text{
+	font-size: 15px;
+	color: #555;
+}
+
+/* =========================
+   FORMULAIRE CONTACT
+   ========================= */
+
+/* Tu utilises <div class="form-container"> */
+.form-container{
+	max-width: 500px;
+	margin: 0 auto;
+	background: white;
+	padding: 18px 16px;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* Tu utilises <p class="message-ok"> */
+.message-ok{
+	max-width: 500px;
+	margin: 15px auto;
+	padding: 10px 12px;
+	border-radius: 10px;
+	background: #e9f0ff;
+	color: #0b1f3a;
+	font-weight: bold;
+	border-left: 5px solid #123c73;
+	box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+form{
+	max-width: 500px;
+	margin: 30px auto;
+}
+
+form label{
+	display: block;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #0b1f3a;
+}
+
+form input,
+form textarea{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #d8dee9;
+	border-radius: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	background: white;
+}
+
+form textarea{
+	resize: vertical;
+}
+
+form input:focus,
+form textarea:focus{
+	border-color: #123c73;
+	outline: none;
+}
+
+form input[type="submit"]{
+	background: #123c73;
+	color: white;
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+form input[type="submit"]:hover{
+	background: #0b2b55;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.pied-page{
+	margin-top: auto;
+	background: linear-gradient(120deg, #0b1f3a, #123c73);
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.pied-page p{
+	margin: 5px 0;
+}
+
+.pied-page a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 6px;
+}
+
+.pied-page a:hover{
+	text-decoration: underline;
+}
+
+/* ====================================================
+   STYLE ARTICLE UNIQUEMENT POUR LA PAGE ACCUEIL
+   ==================================================== */
+
+/* Bannière */
+.accueil-banniere img{
+	display: block;
+	max-width: 850px;
+	width: 100%;
+	margin: 30px auto;
+}
+.accueil-image-milieu{
+	display: block;
+	max-width: 850px;
+	width: 100%;
+	margin: 30px auto;
+}
+
+/* Grand titre centré */
+.accueil-titre{
+	text-align: center;
+	font-size: 38px;
+	letter-spacing: 3px;
+	color: #1f3b57;
+	margin: 20px 0 25px 0;
+}
+
+/* Intro centrée */
+.accueil-intro{
+	max-width: 800px;
+	margin: 0 auto 50px auto;
+	text-align: center;
+	font-size: 17px;
+	line-height: 1.8;
+	color: #4b5563;
+}
+
+/* Sections centrées */
+.accueil-section{
+	max-width: 800px;
+	margin: 0 auto 60px auto;
+}
+
+/* Sous-titres style éditorial */
+.accueil-sous-titre{
+	font-size: 26px;
+	color: #1f3b57;
+	margin-bottom: 20px;
+}
+
+/* Paragraphes accueil seulement */
+.accueil-section p{
+	line-height: 1.8;
+	font-size: 16px;
+	color: #555;
+	text-align: left;
+}
+
+/* Boutons accueil */
+.accueil-boutons{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.accueil-boutons a{
+	margin: 6px;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 700px){
+	header h1{
+		font-size: 18px;
+	}
+	.accueil-titre{
+		font-size: 28px;
+	}
+}
+/* =========================
+   Images pages fiche
+   ========================= */
+
+.fiche-image{
+	max-width: 300px;   /* plus petite */
+	width: 100%;        
+	height: auto;       /* garde les proportions */
+	display: block;
+	margin: 20px 0;     /* pas centré */
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+/* =========================
+   Profil utilisateur
+   ========================= */
+
+/* Limiter la largeur de la carte profil */
+.profil-card{
+	max-width: 500px;
+	margin-top: 20px;
+}
+
+/* Espacement entre les boutons */
+.profil-card .btn{
+	margin-right: 10px;
+}
+
+/* Alignement propre du contenu */
+.profil-card p{
+	margin-bottom: 8px;
+}
+/* Image du milieu plus petite */
+.accueil-image-milieu img{
+	display: block;
+	max-width: 850px;   /* plus grande */
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+}
